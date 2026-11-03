@@ -1,9 +1,9 @@
 def write_notes(filename):
     lines = []
     for _ in range(3):
-        lines.append(input("Строка: ") + "\n")
+        lines.append(input("Строка: ") )
 
-    with open(filename, "w", encoding="utf-8") as f:
+    with open(filename, "a", encoding="utf-8") as f:
         f.writelines(lines)
 
 
